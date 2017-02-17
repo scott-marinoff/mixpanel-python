@@ -358,7 +358,7 @@ class Consumer(object):
         data = {
             'data': base64.b64encode(json_message.encode('utf8')),
             'verbose': 1,
-            'ip': 0,
+            'ip': 1,
         }
         if api_key:
             data.update({'api_key': api_key})
